@@ -55,16 +55,16 @@ forever:
 .segment "RODATA"
 palettes:
 ; background palettes
-.byte $29, $00, $16, $30
-.byte $29, $01, $0f, $31
-.byte $29, $06, $16, $26
-.byte $29, $09, $19, $29
+.byte $04, $00, $16, $30
+.byte $04, $01, $0f, $31
+.byte $04, $06, $16, $26
+.byte $04, $09, $19, $04
 
 ; sprite palettes
-.byte $29, $11, $30, $26
-.byte $29, $01, $0f, $31
-.byte $29, $06, $16, $26
-.byte $29, $09, $19, $29
+.byte $04, $11, $30, $26
+.byte $04, $01, $0f, $31
+.byte $04, $06, $16, $26
+.byte $04, $09, $19, $04
 
 .segment "VECTORS"
 .addr nmi_handler, reset_handler, irq_handler
